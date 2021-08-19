@@ -1,0 +1,25 @@
+
+.layout__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .layout__left-part, .layout__right-part {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.layout__right-part {
+      flex-direction: column;
+    }
+  }
+}
+
+.output-text {
+  white-space: pre;
+  margin: 1rem auto;
+}
+

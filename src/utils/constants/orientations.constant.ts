@@ -1,0 +1,1 @@
+export const ORIENTATIONS = ['N', 'E', 'S', 'W']
