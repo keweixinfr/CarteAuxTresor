@@ -95,7 +95,7 @@ export class AventureManagerService {
       }
     }
     for (let key in this.listTreasures) {
-      if (this.listTreasures.hasOwnProperty(key)) {
+      if (this.listTreasures.hasOwnProperty(key) && this.listTreasures[key]) {
          resultArray.push(['T', ...key.split('-'), this.listTreasures[key]])
       }
     }

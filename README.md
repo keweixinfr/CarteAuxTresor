@@ -7,3 +7,7 @@ This project is created for the interview of Carbon IT.
 Run `npm i`
 
 then `ng serve --open` OR `npm start` and open your browser with [http://localhost:4200/](http://localhost:4200/)
+
+## How to test
+
+Run `ng test`

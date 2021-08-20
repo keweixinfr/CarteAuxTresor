@@ -28,7 +28,7 @@ export class AppComponent {
       const fileReader = new FileReader();
       fileReader.onload = (e) => {
         this.inputText = fileReader.result;
-        this.outputText = this.aventureManagerService.getAdventureResult(this.inputText);
+        this.outputText = this.inputText ? this.aventureManagerService.getAdventureResult(this.inputText) : '';
         const data = new Blob([this.outputText], {type: 'text/plain'});
         if (this.outputFileURL !== null) {
           window.URL.revokeObjectURL(this.outputFileURL);
